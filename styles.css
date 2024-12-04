@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e4e3e3;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5pt;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e0e0e0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+section {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+section header h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    color: #fff;
+    background-color: #4CAF50;
+    text-align: center;
+}
+
+section .section-content {
+    padding-top: 3rem;
+}
+
+.certifications-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.certifications-list ul li {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.certification-item p, .portfolio-item p {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.certification-images, .portfolio-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ebffe4;
+}
+
+.certification-images img, .portfolio-images img {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem;
+}
+
+.certification-images figure {
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+
+.certification-images figcaption {
+    padding-top: 0.5rem;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.work-item, .education-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.work-item aside, .education-item aside {
+    display: flex;
+    align-items: flex-start;
+}
+
+.work-item aside img, .education-item aside img {
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.work-item .work-details, .education-item .education-details {
+    flex: 1;
+}
+
+.work-item .work-title, .education-item .education-title {
+    font-weight: bold;
+    margin: 0.5rem 0;
+    padding-left: .5rem;
+}
+
+.work-item .work-duration, .education-item .education-duration,
+.work-item .work-skills, .education-item .education-coursework {
+    margin: 0.5rem 0;
+}
+
+.work-item .work-skills, .education-item .education-coursework {
+    display: flex;
+    align-items: center;
+}
+
+.work-item .work-skills strong, .education-item .education-coursework strong {
+    margin-right: 0.5rem;
+}
+
+.work-item .work-achievements, .education-item .education-achievements {
+    padding-left: 1.5rem;
+}
+
+.portfolio-list ul, .certifications-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.portfolio-list ul li, .certifications-list ul li {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.profile {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto 2rem;
+}
+
+.profile h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.profile img {
+    width: 124.32px;
+    height: 124.32px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+    text-align: left;
+}
+
+.profile-details p {
+    margin-bottom: 0.5rem;
+}
+
+.profile-details strong {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    border-radius: 10px 0 10px 0;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .work-item, .education-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-item aside, .education-item aside {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-item .work-details, .education-item .education-details {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    footer h2 {
+        font-size: 1.25rem;
+    }
+}
+
+.about-me{
+    text-align: justify;
+}
+
+figure > img {
+    height: 125px;
+}
